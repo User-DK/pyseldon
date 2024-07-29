@@ -117,6 +117,118 @@ src.simulation
 
 ````
 
+````{py:property} get_direction
+:canonical: src.Network.get_direction
+
+```{autodoc2-docstring} src.Network.get_direction
+```
+
+````
+
+````{py:property} strongly_connected_components
+:canonical: src.Network.strongly_connected_components
+
+```{autodoc2-docstring} src.Network.strongly_connected_components
+```
+
+````
+
+````{py:method} get_neighbours(index)
+:canonical: src.Network.get_neighbours
+
+```{autodoc2-docstring} src.Network.get_neighbours
+```
+
+````
+
+````{py:method} get_weights(index)
+:canonical: src.Network.get_weights
+
+```{autodoc2-docstring} src.Network.get_weights
+```
+
+````
+
+````{py:method} set_weights(agent_idx, weights)
+:canonical: src.Network.set_weights
+
+```{autodoc2-docstring} src.Network.set_weights
+```
+
+````
+
+````{py:method} set_neighbours_and_weights(agent_idx, buffer_neighbours, buffer_weights)
+:canonical: src.Network.set_neighbours_and_weights
+
+```{autodoc2-docstring} src.Network.set_neighbours_and_weights
+```
+
+````
+
+````{py:method} push_back_neighbour_and_weight(agent_idx_i, agent_idx_j, weight)
+:canonical: src.Network.push_back_neighbour_and_weight
+
+```{autodoc2-docstring} src.Network.push_back_neighbour_and_weight
+```
+
+````
+
+````{py:method} transpose()
+:canonical: src.Network.transpose
+
+```{autodoc2-docstring} src.Network.transpose
+```
+
+````
+
+````{py:method} toggle_incoming_outgoing()
+:canonical: src.Network.toggle_incoming_outgoing
+
+```{autodoc2-docstring} src.Network.toggle_incoming_outgoing
+```
+
+````
+
+````{py:method} switch_direction_flag()
+:canonical: src.Network.switch_direction_flag
+
+```{autodoc2-docstring} src.Network.switch_direction_flag
+```
+
+````
+
+````{py:method} remove_double_counting()
+:canonical: src.Network.remove_double_counting
+
+```{autodoc2-docstring} src.Network.remove_double_counting
+```
+
+````
+
+````{py:method} clear()
+:canonical: src.Network.clear
+
+```{autodoc2-docstring} src.Network.clear
+```
+
+````
+
+````{py:method} get_agents_data(index=None)
+:canonical: src.Network.get_agents_data
+
+```{autodoc2-docstring} src.Network.get_agents_data
+```
+
+````
+
+````{py:method} set_agents_data(index, opinion, activity=None, reluctance=None, velocity=None)
+:canonical: src.Network.set_agents_data
+
+```{autodoc2-docstring} src.Network.set_agents_data
+```
+
+````
+
 `````
 
 ````{py:class} Simulation(model_string='DeGroot', agent_file_path=None, network_file_path=None)
