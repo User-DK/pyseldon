@@ -6,9 +6,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>DeGroot Model (Reaching Consensus) &#8212; PySeldon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overview: module code &#8212; PySeldon</title>
   
   
   
@@ -43,12 +42,10 @@
     <script src="../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../_static/copybutton.js?v=f281be69"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'examples/degrootmodel';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/index';</script>
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Contributing" href="../contributing.html" />
-    <link rel="prev" title="Examples" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -165,8 +162,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="index.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
     Examples
   </a>
 </li>
@@ -276,10 +273,6 @@ document.write(`
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -290,7 +283,9 @@ document.write(`
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -326,8 +321,8 @@ document.write(`
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="index.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../examples/index.html">
     Examples
   </a>
 </li>
@@ -400,18 +395,6 @@ document.write(`
     
   </div>
   
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">DeGroot Model (Reaching Consensus)</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
-  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -444,10 +427,7 @@ document.write(`
         <i class="fa-solid fa-home"></i>
       </a>
     </li>
-    
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Examples</a></li>
-    
-    <li class="breadcrumb-item active" aria-current="page">DeGroot...</li>
+    <li class="breadcrumb-item active" aria-current="page">Overview:...</li>
   </ul>
 </nav>
 </div>
@@ -464,56 +444,17 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="degroot-model-reaching-consensus">
-<h1>DeGroot Model (Reaching Consensus)<a class="headerlink" href="#degroot-model-reaching-consensus" title="Link to this heading">#</a></h1>
-<p>Import the packages</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyseldon</span>
-<span class="kn">import</span> <span class="nn">pathlib</span>
-<span class="kn">import</span> <span class="nn">shutil</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Initialize some other settings for the simulation</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">other_settings</span> <span class="o">=</span> <span class="n">pyseldon</span><span class="o">.</span><span class="n">Other_Settings</span><span class="p">(</span><span class="n">n_output_agents</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
-                                         <span class="n">n_output_network</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
-                                         <span class="n">print_progress</span><span class="o">=</span> <span class="kc">True</span><span class="p">,</span> 
-                                         <span class="n">output_initial</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
-                                         <span class="n">start_output</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> 
-                                         <span class="n">number_of_agents</span> <span class="o">=</span> <span class="mi">200</span><span class="p">,</span> 
-                                         <span class="n">connections_per_agent</span> <span class="o">=</span> <span class="mi">10</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-<p>Initialize the model with parameters.</p>
-<div class="cell docutils container">
-<div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">pyseldon</span><span class="o">.</span><span class="n">DeGroot_Model</span><span class="p">(</span><span class="n">max_iterations</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
-                               <span class="n">convergence_tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span>
-                               <span class="n">rng_seed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> 
-                               <span class="n">other_settings</span><span class="o">=</span><span class="n">other_settings</span><span class="p">)</span>
-<span class="n">output_dir_path</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="s2">&quot;./output&quot;</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">output_dir_path</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-  <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">output_dir_path</span><span class="p">)</span>
-<span class="n">model</span><span class="o">.</span><span class="n">run</span><span class="p">(</span><span class="n">output_dir_path</span><span class="p">)</span>
-<span class="k">if</span> <span class="n">pathlib</span><span class="o">.</span><span class="n">Path</span><span class="p">(</span><span class="n">output_dir_path</span><span class="p">)</span><span class="o">.</span><span class="n">exists</span><span class="p">():</span>
-  <span class="n">shutil</span><span class="o">.</span><span class="n">rmtree</span><span class="p">(</span><span class="n">output_dir_path</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-<div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Output directory path set to: /home/runner/work/pyseldon/pyseldon/docs/examples/output
-</pre></div>
-</div>
-</div>
-</div>
-</section>
-
+  <h1>All modules for which code is available</h1>
+<ul><li><a href="pyseldon/ActivityDrivenModel.html">pyseldon.ActivityDrivenModel</a></li>
+<li><a href="pyseldon/DeGrootModel.html">pyseldon.DeGrootModel</a></li>
+<li><a href="pyseldon/DeffuantModel.html">pyseldon.DeffuantModel</a></li>
+<li><a href="pyseldon/DeffuantVectorModel.html">pyseldon.DeffuantVectorModel</a></li>
+<li><a href="pyseldon/InertialModel.html">pyseldon.InertialModel</a></li>
+<li><a href="pyseldon/_basemodel.html">pyseldon._basemodel</a></li>
+<li><a href="pyseldon/_network.html">pyseldon._network</a></li>
+<li><a href="pyseldon/_othersettings.html">pyseldon._othersettings</a></li>
+<li><a href="pyseldon/_run_simulation.html">pyseldon._run_simulation</a></li>
+</ul>
 
                 </article>
               
@@ -524,44 +465,12 @@ document.write(`
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="index.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Examples</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="../contributing.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Contributing</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../_sources/examples/degrootmodel.ipynb.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
-
-</div></div>
               
             
           </div>
