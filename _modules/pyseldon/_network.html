@@ -449,7 +449,10 @@ document.write(`
                   
   <h1>Source code for pyseldon._network</h1><div class="highlight"><pre>
 <span></span><span class="kn">from</span> <span class="nn">bindings</span> <span class="kn">import</span> <span class="n">seldoncore</span>
+<span class="kn">import</span> <span class="nn">logging</span>
 
+<span class="n">logging</span><span class="o">.</span><span class="n">basicConfig</span><span class="p">(</span><span class="n">level</span><span class="o">=</span><span class="n">logging</span><span class="o">.</span><span class="n">INFO</span><span class="p">)</span>
+<span class="n">logger</span> <span class="o">=</span> <span class="n">logging</span><span class="o">.</span><span class="n">getLogger</span><span class="p">(</span><span class="vm">__name__</span><span class="p">)</span>
 
 <div class="viewcode-block" id="Network">
 <a class="viewcode-back" href="../../source/reference/packagereference.html#pyseldon.__init__.Network">[docs]</a>
@@ -567,7 +570,7 @@ document.write(`
                 <span class="bp">self</span><span class="o">.</span><span class="n">network</span> <span class="o">=</span> <span class="n">seldoncore</span><span class="o">.</span><span class="n">InertialAgentNetwork</span><span class="p">()</span>
 
         <span class="k">else</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span>
+            <span class="n">logger</span><span class="o">.</span><span class="n">warning</span><span class="p">(</span>
                 <span class="s2">&quot;This is a float type network that can&#39;t be used for the simulation as it doesn&#39;t contain any agents and their data like opinions, etc.&quot;</span>
             <span class="p">)</span>
             <span class="k">if</span> <span class="n">n_agents</span><span class="p">:</span>
@@ -812,7 +815,7 @@ document.write(`
 
   <p class="copyright">
     
-      © Copyright 2024, Amrita Goswami, Moritz Sallermann, Rohit Goswami, Daivik Karbhari.
+      © Copyright 2024, PySeldon Developers.
       <br/>
     
   </p>
