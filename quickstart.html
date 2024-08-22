@@ -461,8 +461,6 @@ document.write(`
 <h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyseldon</span>
 
-<span class="c1"># run the simulation from a configuration file</span>
-
 <span class="n">pyseldon</span><span class="o">.</span><span class="n">run_simulation_from_config_file</span><span class="p">(</span><span class="n">config_file_path</span> <span class="o">=</span><span class="s2">&quot;path/to/config.toml&quot;</span><span class="p">,</span> <span class="n">agent_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/agent.csv&quot;</span><span class="p">,</span> <span class="n">network_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/network.csv&quot;</span><span class="p">,</span> <span class="n">output_dir_path</span><span class="o">=</span><span class="s2">&quot;path/to/output&quot;</span><span class="p">)</span>
 </pre></div>
 </div>
@@ -470,28 +468,44 @@ document.write(`
 <section id="toml-file-format">
 <h2>TOML file Format<a class="headerlink" href="#toml-file-format" title="Link to this heading">#</a></h2>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[simulation]</span>
-<span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span><span class="w"> </span><span class="c1"># The model to run. Options are DeGroot, Deffuant, DeffuantVector, ActivityDriven, Inertial</span>
-<span class="n">rng_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span><span class="w"> </span><span class="c1"># Leaving this empty will pick a random seed</span>
+<span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="n">rng_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span>
 
 <span class="k">[io]</span>
-<span class="n">n_output_network</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="c1"># Write the network every 20 iterations</span>
-<span class="n">n_output_agents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="c1"># Write the opinions of agents after every iteration</span>
-<span class="n">print_progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span><span class="w"> </span><span class="c1"># Print the iteration time ; if not set, then does not prints</span>
-<span class="n">output_initial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="c1"># Print the initial opinions and network file from step 0. If not set, this is true by default.</span>
-<span class="n">start_output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="c1"># Start writing out opinions and/or network files from this iteration. If not set, this is 1 + start_numbering_from.</span>
-<span class="n">start_numbering_from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="w"> </span><span class="c1"># The initial step number, before the simulation runs, is this value. The first step would be (1+start_numbering_from). By default, 0</span>
+<span class="n">n_output_network</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span>
+<span class="n">n_output_agents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">print_progress</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
+<span class="n">output_initial</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
+<span class="n">start_output</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<span class="n">start_numbering_from</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
 
-<span class="k">[model]</span><span class="w"> </span><span class="c1"># Model specific parameters</span>
-<span class="n">max_iterations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span><span class="w"> </span><span class="c1"># If not set, max iterations is infinite</span>
+<span class="k">[model]</span>
+<span class="n">max_iterations</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">20</span>
 
 <span class="k">[DeGroot]</span>
-<span class="n">convergence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e-3</span><span class="w"> </span><span class="c1"># If not set, the default 1e-6 is used</span>
+<span class="n">convergence</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mf">1e-3</span>
 
 <span class="k">[network]</span>
 <span class="n">number_of_agents</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">300</span>
 <span class="n">connections_per_agent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span>
 </pre></div>
 </div>
+<p># The model to run. Options are DeGroot, Deffuant, DeffuantVector, ActivityDriven, Inertial
+# The model specific parameters are given in the model section
+# The network parameters are given in the network section
+# The output parameters are given in the io section
+# Leaving this empty will pick a random seed
+# Write the network every 20 iterations
+# Write the opinions of agents after every iteration
+# Print the iteration time ; if not set, then does not prints
+# Print the initial opinions and network file from step 0. If not set, this is true by default.
+# Start writing out opinions and/or network files from this iteration. If not set, this is 1 + start_numbering_from.
+# The initial step number, before the simulation runs, is this value. The first step would be (1+start_numbering_from). By default, 0</p>
+<blockquote>
+<div><p># Model specific parameters</p>
+</div></blockquote>
+<p># If not set, max iterations is infinite
+# If not set, the default 1e-6 is used</p>
 </section>
 </section>
 

@@ -452,15 +452,15 @@ document.write(`
 <span class="sd">The Deffuant Model, also known as the &quot;Mixing of Beliefs among Interacting Agents,&quot; describes how agents update their continuous opinions through random binary encounters. In this model, agents only adjust their opinions if the difference between their opinions is below a specified threshold, known as the Homophily Threshold.</span>
 
 <span class="sd">Model Dynamics</span>
-<span class="sd">~~~~~~~~~~~~~~</span>
+<span class="sd">--------------</span>
 
-<span class="sd">  Homophily Threshold:</span>
+<span class="sd">Homophily Threshold:</span>
 <span class="sd">  If the difference in opinions between two interacting agents is less than this threshold, they will update their opinions towards each other. This process leads to opinion convergence or clustering depending on the value of the threshold.</span>
 
-<span class="sd">  High Thresholds:</span>
+<span class="sd">High Thresholds:</span>
 <span class="sd">  When the Homophily Threshold is high, opinions tend to converge towards an average opinion, as agents are more selective about whom they interact with.</span>
 
-<span class="sd">  Low Thresholds:</span>
+<span class="sd">Low Thresholds:</span>
 <span class="sd">  When the Homophily Threshold is low, the model results in the formation of several distinct opinion clusters. Agents within the same cluster share similar opinions and are less influenced by agents outside their cluster.</span>
 
 <span class="sd">Example:</span>
@@ -477,9 +477,12 @@ document.write(`
 
 <span class="sd">Reference:</span>
 <span class="sd">----------</span>
-<span class="sd">- Mixing beliefs among interacting agents. Guillaume Deffuant, David Neau, Frédéric Amblard, and Gérard Weisbuch. Advances in Complex Systems, 3(1-4):87-98, 2000. DOI: 10.1142/S0219525900000078</span>
+<span class="sd">.. bibliography::</span>
+<span class="sd">   :style: plain</span>
 
-<span class="sd">***</span>
+<span class="sd">   Deffuant_2000</span>
+
+<span class="sd">*************</span>
 <span class="sd">&quot;&quot;&quot;</span>
 
 <span class="kn">from</span> <span class="nn">bindings</span> <span class="kn">import</span> <span class="n">seldoncore</span>
