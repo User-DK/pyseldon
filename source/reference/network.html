@@ -47,7 +47,7 @@
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Complete Api Reference" href="packagereference.html" />
+    <link rel="next" title="util" href="util.html" />
     <link rel="prev" title="Activity Driven Inertial Model" href="inertial.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -239,7 +239,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Home Page</span></a>
         </li>
         <li class="nav-item">
@@ -251,7 +251,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -379,7 +379,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Home Page</span></a>
         </li>
         <li class="nav-item">
@@ -391,7 +391,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -416,6 +416,7 @@ document.write(`
 </ul>
 </details></li>
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">network</a></li>
+<li class="toctree-l1"><a class="reference internal" href="util.html">util</a></li>
 <li class="toctree-l1"><a class="reference internal" href="packagereference.html">Complete Api Reference</a></li>
 </ul>
 </div>
@@ -474,28 +475,28 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="module-pyseldon.network">
-<span id="network"></span><h1>network<a class="headerlink" href="#module-pyseldon.network" title="Link to this heading">#</a></h1>
-<p>The network module contains the Network class and functions to generate networks and save them to files.</p>
+  <section id="module-pyseldonlib.network">
+<span id="network"></span><h1>network<a class="headerlink" href="#module-pyseldonlib.network" title="Link to this heading">#</a></h1>
+<p>The network module contains the Network class</p>
 <dl class="py class">
-<dt class="sig sig-object py" id="pyseldon.network.Network">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">Network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_agents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neighbour_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Incoming'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyseldonlib.network.</span></span><span class="sig-name descname"><span class="pre">Network</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_agents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">neighbour_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight_list</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">float</span><span class="p"><span class="pre">]</span></span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">[]</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">direction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">str</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">'Incoming'</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network" title="Link to this definition">#</a></dt>
 <dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.clear">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clear</span></span><a class="headerlink" href="#pyseldon.network.Network.clear" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.clear">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">clear</span></span><a class="headerlink" href="#pyseldonlib.network.Network.clear" title="Link to this definition">#</a></dt>
 <dd><p>Clears the network.</p>
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.get_direction">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_direction</span></span><a class="headerlink" href="#pyseldon.network.Network.get_direction" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.get_direction">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">get_direction</span></span><a class="headerlink" href="#pyseldonlib.network.Network.get_direction" title="Link to this definition">#</a></dt>
 <dd><p>The direction of the network.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyseldon.network.Network.get_neighbours">
-<span class="sig-name descname"><span class="pre">get_neighbours</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network.get_neighbours"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network.get_neighbours" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.get_neighbours">
+<span class="sig-name descname"><span class="pre">get_neighbours</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network.get_neighbours"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network.get_neighbours" title="Link to this definition">#</a></dt>
 <dd><p>The neighbours of the node/agent in the network.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -505,8 +506,8 @@ document.write(`
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyseldon.network.Network.get_weights">
-<span class="sig-name descname"><span class="pre">get_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network.get_weights"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network.get_weights" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.get_weights">
+<span class="sig-name descname"><span class="pre">get_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network.get_weights"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network.get_weights" title="Link to this definition">#</a></dt>
 <dd><p>The weights of the agent.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -516,14 +517,14 @@ document.write(`
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.n_agents">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_agents</span></span><a class="headerlink" href="#pyseldon.network.Network.n_agents" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.n_agents">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">n_agents</span></span><a class="headerlink" href="#pyseldonlib.network.Network.n_agents" title="Link to this definition">#</a></dt>
 <dd><p>The number of nodes/agents in the network.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyseldon.network.Network.n_edges">
-<span class="sig-name descname"><span class="pre">n_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network.n_edges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network.n_edges" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.n_edges">
+<span class="sig-name descname"><span class="pre">n_edges</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network.n_edges"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network.n_edges" title="Link to this definition">#</a></dt>
 <dd><p>The number of edges going out/coming in at <cite>agent_idx</cite> in the network.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -533,8 +534,8 @@ document.write(`
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyseldon.network.Network.push_back_neighbour_and_weight">
-<span class="sig-name descname"><span class="pre">push_back_neighbour_and_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx_i</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agent_idx_j</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network.push_back_neighbour_and_weight"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network.push_back_neighbour_and_weight" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.push_back_neighbour_and_weight">
+<span class="sig-name descname"><span class="pre">push_back_neighbour_and_weight</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx_i</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">agent_idx_j</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network.push_back_neighbour_and_weight"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network.push_back_neighbour_and_weight" title="Link to this definition">#</a></dt>
 <dd><p>Adds an edge between agent_idx_i and agent_idx_j with weight w</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -548,14 +549,14 @@ document.write(`
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.remove_double_counting">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">remove_double_counting</span></span><a class="headerlink" href="#pyseldon.network.Network.remove_double_counting" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.remove_double_counting">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">remove_double_counting</span></span><a class="headerlink" href="#pyseldonlib.network.Network.remove_double_counting" title="Link to this definition">#</a></dt>
 <dd><p>Sorts the neighbours by index and removes doubly counted edges by summing the weights of the corresponding edges.</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyseldon.network.Network.set_neighbours_and_weights">
-<span class="sig-name descname"><span class="pre">set_neighbours_and_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_neighbours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network.set_neighbours_and_weights"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network.set_neighbours_and_weights" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.set_neighbours_and_weights">
+<span class="sig-name descname"><span class="pre">set_neighbours_and_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">buffer_neighbours</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span><span class="p"><span class="pre">[</span></span><span class="pre">int</span><span class="p"><span class="pre">]</span></span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network.set_neighbours_and_weights"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network.set_neighbours_and_weights" title="Link to this definition">#</a></dt>
 <dd><p>Sets the neighbour indices and sets the weight to a constant value at agent_idx in the network.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -569,8 +570,8 @@ document.write(`
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="pyseldon.network.Network.set_weights">
-<span class="sig-name descname"><span class="pre">set_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#Network.set_weights"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.Network.set_weights" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.set_weights">
+<span class="sig-name descname"><span class="pre">set_weights</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">agent_idx</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weights</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">list</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldonlib/network.html#Network.set_weights"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldonlib.network.Network.set_weights" title="Link to this definition">#</a></dt>
 <dd><p>Set the weights of the agent.</p>
 <dl class="field-list simple">
 <dt class="field-odd">Parameters<span class="colon">:</span></dt>
@@ -583,8 +584,8 @@ document.write(`
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.strongly_connected_components">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">strongly_connected_components</span></span><a class="headerlink" href="#pyseldon.network.Network.strongly_connected_components" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.strongly_connected_components">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">strongly_connected_components</span></span><a class="headerlink" href="#pyseldonlib.network.Network.strongly_connected_components" title="Link to this definition">#</a></dt>
 <dd><p>The strongly connected components of the network.</p>
 <dl class="simple">
 <dt>Returns</dt><dd><p>list: The strongly connected components of the network.</p>
@@ -593,171 +594,23 @@ document.write(`
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.switch_direction_flag">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">switch_direction_flag</span></span><a class="headerlink" href="#pyseldon.network.Network.switch_direction_flag" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.switch_direction_flag">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">switch_direction_flag</span></span><a class="headerlink" href="#pyseldonlib.network.Network.switch_direction_flag" title="Link to this definition">#</a></dt>
 <dd><p>Only switches the direction flag. This effectively transposes the network and, simultaneously, changes its representation.</p>
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.toggle_incoming_outgoing">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">toggle_incoming_outgoing</span></span><a class="headerlink" href="#pyseldon.network.Network.toggle_incoming_outgoing" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.toggle_incoming_outgoing">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">toggle_incoming_outgoing</span></span><a class="headerlink" href="#pyseldonlib.network.Network.toggle_incoming_outgoing" title="Link to this definition">#</a></dt>
 <dd><p>Switches the direction flag <em>without</em> transposing the network (expensive)</p>
 </dd></dl>
 
 <dl class="py property">
-<dt class="sig sig-object py" id="pyseldon.network.Network.transpose">
-<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transpose</span></span><a class="headerlink" href="#pyseldon.network.Network.transpose" title="Link to this definition">#</a></dt>
+<dt class="sig sig-object py" id="pyseldonlib.network.Network.transpose">
+<em class="property"><span class="pre">property</span><span class="w"> </span></em><span class="sig-name descname"><span class="pre">transpose</span></span><a class="headerlink" href="#pyseldonlib.network.Network.transpose" title="Link to this definition">#</a></dt>
 <dd><p>Transposes the network, without switching the direction flag (expensive).</p>
 </dd></dl>
 
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.agents_from_file">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">agents_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#agents_from_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.agents_from_file" title="Link to this definition">#</a></dt>
-<dd><p>Load agents from a file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>model_string</strong> (<em>str</em>) – The model string. Allowed values are “DeGroot”, “Deffuant”, “DeffuantVector”, “ActivityDriven”, “Inertial”, “Float”.</p></li>
-<li><p><strong>file_path</strong> (<em>str</em>) – The file path.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>list</strong></p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The list of agents.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.agents_to_file">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">agents_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#agents_to_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.agents_to_file" title="Link to this definition">#</a></dt>
-<dd><p>Save agents to a file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>network</strong> (<a class="reference internal" href="#pyseldon.network.Network" title="pyseldon.network.Network"><em>Network</em></a>) – The network.</p></li>
-<li><p><strong>file_path</strong> (<em>str</em>) – The file path.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.generate_fully_connected">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">generate_fully_connected</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_agents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rng_seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#generate_fully_connected"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.generate_fully_connected" title="Link to this definition">#</a></dt>
-<dd><p>Generate a fully connected Network for n_agents.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>model_string</strong> (<em>str</em>) – The model string. Allowed values are “DeGroot”, “Deffuant”, “DeffuantVector”, “ActivityDriven”, “Inertial”, “Float”.</p></li>
-<li><p><strong>n_agents</strong> (<em>int</em>) – The number of agents.</p></li>
-<li><p><strong>weight</strong> (<em>float</em>) – The weight of the agent.</p></li>
-<li><p><strong>rng_seed</strong> (<em>int</em><em>, </em><em>default=None</em>) – The seed for the random number generator. If not provided, a random seed is picked.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Network</strong></p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The fully connected network.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.generate_n_connections">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">generate_n_connections</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_agents</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_connections</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">self_interaction</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">bool</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">False</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">rng_seed</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span><span class="w"> </span><span class="o"><span class="pre">=</span></span><span class="w"> </span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#generate_n_connections"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.generate_n_connections" title="Link to this definition">#</a></dt>
-<dd><p>Generate n_connections Network for n_agents.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>model_string</strong> (<em>str</em>) – The model string. Allowed values are “DeGroot”, “Deffuant”, “DeffuantVector”, “ActivityDriven”, “Inertial”, “Float”.</p></li>
-<li><p><strong>n_agents</strong> (<em>int</em>) – The number of agents.</p></li>
-<li><p><strong>n_connections</strong> (<em>int</em>) – The number of connections.</p></li>
-<li><p><strong>self_interaction</strong> (<em>bool</em><em>, </em><em>default=False</em>) – If True, self iteraction is allowed.</p></li>
-<li><p><strong>rng_seed</strong> (<em>int</em><em>, </em><em>default=None</em>) – The seed for the random number generator. If not provided, a random seed is picked.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Network</strong></p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The network.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.generate_network_from_file">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">generate_network_from_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#generate_network_from_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.generate_network_from_file" title="Link to this definition">#</a></dt>
-<dd><p>Generate a Network from a file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>model_string</strong> (<em>str</em>) – The model string. Allowed values are “DeGroot”, “Deffuant”, “DeffuantVector”, “ActivityDriven”, “Inertial”, “Float”.</p></li>
-<li><p><strong>file_path</strong> (<em>str</em>) – The file path.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Network</strong></p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The network.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.generate_square_lattice">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">generate_square_lattice</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">model_string</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_edge</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">int</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">weight</span></span><span class="p"><span class="pre">:</span></span><span class="w"> </span><span class="n"><span class="pre">float</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#generate_square_lattice"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.generate_square_lattice" title="Link to this definition">#</a></dt>
-<dd><p>Generate a square lattice Network.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>model_string</strong> (<em>str</em>) – The model string. Allowed values are “DeGroot”, “Deffuant”, “DeffuantVector”, “ActivityDriven”, “Inertial”, “Float”.</p></li>
-<li><p><strong>n_edge</strong> (<em>int</em>) – The number of edges.</p></li>
-<li><p><strong>weight</strong> (<em>float</em>) – The weight of the agent.</p></li>
-</ul>
-</dd>
-<dt class="field-even">Returns<span class="colon">:</span></dt>
-<dd class="field-even"><p><strong>Network</strong></p>
-</dd>
-<dt class="field-odd">Return type<span class="colon">:</span></dt>
-<dd class="field-odd"><p>The square lattice network.</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.network_to_dot_file">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">network_to_dot_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#network_to_dot_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.network_to_dot_file" title="Link to this definition">#</a></dt>
-<dd><p>Save the network to a dot file. This is a graph description language file.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>network</strong> (<a class="reference internal" href="#pyseldon.network.Network" title="pyseldon.network.Network"><em>Network</em></a>) – The network.</p></li>
-<li><p><strong>file_path</strong> (<em>str</em>) – The file path.</p></li>
-</ul>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py function">
-<dt class="sig sig-object py" id="pyseldon.network.network_to_file">
-<span class="sig-prename descclassname"><span class="pre">pyseldon.network.</span></span><span class="sig-name descname"><span class="pre">network_to_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">network</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_path</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="../../_modules/pyseldon/network.html#network_to_file"><span class="viewcode-link"><span class="pre">[source]</span></span></a><a class="headerlink" href="#pyseldon.network.network_to_file" title="Link to this definition">#</a></dt>
-<dd><p>Save the network to a file along with weights.</p>
-<dl class="field-list simple">
-<dt class="field-odd">Parameters<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>network</strong> (<a class="reference internal" href="#pyseldon.network.Network" title="pyseldon.network.Network"><em>Network</em></a>) – The network.</p></li>
-<li><p><strong>file_path</strong> (<em>str</em>) – The file path.</p></li>
-</ul>
-</dd>
-</dl>
 </dd></dl>
 
 </section>
@@ -782,11 +635,11 @@ document.write(`
       </div>
     </a>
     <a class="right-next"
-       href="packagereference.html"
+       href="util.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Complete Api Reference</p>
+        <p class="prev-next-title">util</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -808,31 +661,23 @@ document.write(`
   </div>
   <nav class="bd-toc-nav page-toc" aria-labelledby="pst-page-navigation-heading-2">
     <ul class="visible nav section-nav flex-column">
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network"><code class="docutils literal notranslate"><span class="pre">Network</span></code></a><ul class="visible nav section-nav flex-column">
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.clear"><code class="docutils literal notranslate"><span class="pre">Network.clear</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.get_direction"><code class="docutils literal notranslate"><span class="pre">Network.get_direction</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.get_neighbours"><code class="docutils literal notranslate"><span class="pre">Network.get_neighbours()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.get_weights"><code class="docutils literal notranslate"><span class="pre">Network.get_weights()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.n_agents"><code class="docutils literal notranslate"><span class="pre">Network.n_agents</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.n_edges"><code class="docutils literal notranslate"><span class="pre">Network.n_edges()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.push_back_neighbour_and_weight"><code class="docutils literal notranslate"><span class="pre">Network.push_back_neighbour_and_weight()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.remove_double_counting"><code class="docutils literal notranslate"><span class="pre">Network.remove_double_counting</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.set_neighbours_and_weights"><code class="docutils literal notranslate"><span class="pre">Network.set_neighbours_and_weights()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.set_weights"><code class="docutils literal notranslate"><span class="pre">Network.set_weights()</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.strongly_connected_components"><code class="docutils literal notranslate"><span class="pre">Network.strongly_connected_components</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.switch_direction_flag"><code class="docutils literal notranslate"><span class="pre">Network.switch_direction_flag</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.toggle_incoming_outgoing"><code class="docutils literal notranslate"><span class="pre">Network.toggle_incoming_outgoing</span></code></a></li>
-<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.Network.transpose"><code class="docutils literal notranslate"><span class="pre">Network.transpose</span></code></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network"><code class="docutils literal notranslate"><span class="pre">Network</span></code></a><ul class="visible nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.clear"><code class="docutils literal notranslate"><span class="pre">Network.clear</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.get_direction"><code class="docutils literal notranslate"><span class="pre">Network.get_direction</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.get_neighbours"><code class="docutils literal notranslate"><span class="pre">Network.get_neighbours()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.get_weights"><code class="docutils literal notranslate"><span class="pre">Network.get_weights()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.n_agents"><code class="docutils literal notranslate"><span class="pre">Network.n_agents</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.n_edges"><code class="docutils literal notranslate"><span class="pre">Network.n_edges()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.push_back_neighbour_and_weight"><code class="docutils literal notranslate"><span class="pre">Network.push_back_neighbour_and_weight()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.remove_double_counting"><code class="docutils literal notranslate"><span class="pre">Network.remove_double_counting</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.set_neighbours_and_weights"><code class="docutils literal notranslate"><span class="pre">Network.set_neighbours_and_weights()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.set_weights"><code class="docutils literal notranslate"><span class="pre">Network.set_weights()</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.strongly_connected_components"><code class="docutils literal notranslate"><span class="pre">Network.strongly_connected_components</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.switch_direction_flag"><code class="docutils literal notranslate"><span class="pre">Network.switch_direction_flag</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.toggle_incoming_outgoing"><code class="docutils literal notranslate"><span class="pre">Network.toggle_incoming_outgoing</span></code></a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldonlib.network.Network.transpose"><code class="docutils literal notranslate"><span class="pre">Network.transpose</span></code></a></li>
 </ul>
 </li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.agents_from_file"><code class="docutils literal notranslate"><span class="pre">agents_from_file()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.agents_to_file"><code class="docutils literal notranslate"><span class="pre">agents_to_file()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.generate_fully_connected"><code class="docutils literal notranslate"><span class="pre">generate_fully_connected()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.generate_n_connections"><code class="docutils literal notranslate"><span class="pre">generate_n_connections()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.generate_network_from_file"><code class="docutils literal notranslate"><span class="pre">generate_network_from_file()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.generate_square_lattice"><code class="docutils literal notranslate"><span class="pre">generate_square_lattice()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.network_to_dot_file"><code class="docutils literal notranslate"><span class="pre">network_to_dot_file()</span></code></a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#pyseldon.network.network_to_file"><code class="docutils literal notranslate"><span class="pre">network_to_file()</span></code></a></li>
 </ul>
   </nav></div>
 

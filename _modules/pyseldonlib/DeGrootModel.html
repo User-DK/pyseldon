@@ -6,9 +6,8 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
-
-    <title>Introduction &#8212; PySeldon</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>pyseldonlib.DeGrootModel &#8212; PySeldon</title>
   
   
   
@@ -43,12 +42,10 @@
     <script src="../../_static/clipboard.min.js?v=a7894cd8"></script>
     <script src="../../_static/copybutton.js?v=f281be69"></script>
     <script crossorigin="anonymous" integrity="sha256-Ae2Vz/4ePdIu6ZyI/5ZGsYnb+m0JlOmKPjt6XZ9JJkA=" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'source/reference/introduction';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = '_modules/pyseldonlib/DeGrootModel';</script>
     <link rel="icon" href="../../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Models" href="models.html" />
-    <link rel="prev" title="Reference" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -158,8 +155,8 @@
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="index.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../source/reference/index.html">
     Reference
   </a>
 </li>
@@ -276,10 +273,6 @@ document.write(`
   
 
   
-    <button class="pst-navbar-icon sidebar-toggle secondary-toggle" aria-label="On this page">
-      <span class="fa-solid fa-outdent"></span>
-    </button>
-  
 </div>
 
     </header>
@@ -290,7 +283,9 @@ document.write(`
       
       
       
-      <div class="bd-sidebar-primary bd-sidebar">
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar hide-on-wide">
         
 
   
@@ -319,8 +314,8 @@ document.write(`
 </li>
 
 
-<li class="nav-item current active">
-  <a class="nav-link nav-internal" href="index.html">
+<li class="nav-item ">
+  <a class="nav-link nav-internal" href="../../source/reference/index.html">
     Reference
   </a>
 </li>
@@ -400,29 +395,6 @@ document.write(`
     
   </div>
   
-    <div class="sidebar-primary-items__start sidebar-primary__section">
-        <div class="sidebar-primary-item">
-<nav class="bd-docs-nav bd-links"
-     aria-label="Section Navigation">
-  <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
-  <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Introduction</a></li>
-<li class="toctree-l1 has-children"><a class="reference internal" href="models.html">Models</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
-<li class="toctree-l2"><a class="reference internal" href="degroot.html">DeGroot Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deffuant.html">Deffuant Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="deffuantvector.html">Deffuant Vector Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="activitydriven.html">Activity Driven Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="inertial.html">Activity Driven Inertial Model</a></li>
-</ul>
-</details></li>
-<li class="toctree-l1"><a class="reference internal" href="network.html">network</a></li>
-<li class="toctree-l1"><a class="reference internal" href="util.html">util</a></li>
-<li class="toctree-l1"><a class="reference internal" href="packagereference.html">Complete Api Reference</a></li>
-</ul>
-</div>
-</nav></div>
-    </div>
-  
   
   <div class="sidebar-primary-items__end sidebar-primary__section">
   </div>
@@ -456,9 +428,9 @@ document.write(`
       </a>
     </li>
     
-    <li class="breadcrumb-item"><a href="index.html" class="nav-link">Reference</a></li>
+    <li class="breadcrumb-item"><a href="../index.html" class="nav-link">Module code</a></li>
     
-    <li class="breadcrumb-item active" aria-current="page">Introduction</li>
+    <li class="breadcrumb-item active" aria-current="page">pyseldonlib....</li>
   </ul>
 </nav>
 </div>
@@ -475,20 +447,127 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="introduction">
-<h1>Introduction<a class="headerlink" href="#introduction" title="Link to this heading">#</a></h1>
-<p>Pyseldon provides a simple interface for Opinion Dynamics simulations. It is designed to be easy to use and to provide a simple way to run simulations and analyze the results.
-The package provides a set of classes that implement different models of opinion dynamics. It is a compiled package, so it is fast and efficient. The package is written in C++ and binded with Pybind11 to provide a Python interface.
-Some of the models that are implemented in the package are:</p>
-<ul class="simple">
-<li><p>DeGroot Model</p></li>
-<li><p>Deffuant Model</p></li>
-<li><p>Deffuant Vector Model</p></li>
-<li><p>Activity Driven Model</p></li>
-<li><p>Inertial Model</p></li>
-</ul>
-</section>
+  <h1>Source code for pyseldonlib.DeGrootModel</h1><div class="highlight"><pre>
+<span></span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">The DeGroot Model is a fundamental framework in social influence theory, illustrating how agents in a network update their opinions based on the opinions of their neighbors. At its core, the model posits that each agent revises their opinion by taking the weighted average of their neighbors&#39; opinions. This iterative process continues until the opinions converge to a consensus or a stable state.</span>
 
+<span class="sd">In practical terms, consider a group of individuals—such as a committee or a team—each holding a subjective probability distribution for an unknown parameter. The DeGroot Model describes how these individuals might converge on a unified subjective probability distribution through iterative opinion updates, effectively pooling their individual insights.</span>
+
+<span class="sd">Additionally, the model is versatile and can be applied to scenarios where opinions are represented as point estimates rather than probability distributions. In such cases, the DeGroot Model helps illustrate how a group can achieve consensus on a specific parameter estimate, reflecting the collective judgment of the group.</span>
+
+<span class="sd">Key features</span>
+<span class="sd">------------</span>
+<span class="sd">Opinion Averaging:</span>
+<span class="sd">  Agents update their opinions based on the average opinions of their neighbors, fostering convergence and consensus.</span>
+
+<span class="sd">Iterative Process:</span>
+<span class="sd">  The model operates through a series of iterations, with opinions being refined each step until stability is achieved.</span>
+
+<span class="sd">Consensus Formation:</span>
+<span class="sd">  Applicable to both probability distributions and point estimates, showing how diverse opinions can be aggregated into a common view.</span>
+
+<span class="sd">The DeGroot Model provides a clear and elegant approach to understanding how social influence and information sharing lead to collective agreement within a network of agents.</span>
+
+<span class="sd">Example:</span>
+<span class="sd">---------</span>
+<span class="sd">&gt;&gt;&gt; from pyseldonlib import DeGroot_Model</span>
+<span class="sd">&gt;&gt;&gt; # Create the DeGroot Model</span>
+<span class="sd">&gt;&gt;&gt; model = DeGroot_Model(max_iterations=1000, convergence_tol=1e-6)</span>
+<span class="sd">&gt;&gt;&gt; # Run the simulation</span>
+<span class="sd">&gt;&gt;&gt; model.run(&quot;output_dir&quot;)</span>
+<span class="sd">&gt;&gt;&gt; # Access the network</span>
+<span class="sd">&gt;&gt;&gt; network = model.get_Network()</span>
+<span class="sd">&gt;&gt;&gt; # Access the opinions of the agents</span>
+<span class="sd">&gt;&gt;&gt; opinions = model.agents_opinions()</span>
+
+<span class="sd">Reference:</span>
+<span class="sd">----------</span>
+<span class="sd">.. bibliography:: </span>
+<span class="sd">   :style: plain</span>
+<span class="sd">   </span>
+<span class="sd">   DeGroot_1974</span>
+
+<span class="sd">*************</span>
+<span class="sd">&quot;&quot;&quot;</span>
+
+<span class="kn">from</span> <span class="nn">bindings</span> <span class="kn">import</span> <span class="n">seldoncore</span>
+<span class="kn">from</span> <span class="nn">typing</span> <span class="kn">import</span> <span class="n">Optional</span>
+<span class="kn">from</span> <span class="nn">._basemodel</span> <span class="kn">import</span> <span class="n">Base_Model</span>
+
+<span class="kn">from</span> <span class="nn">._othersettings</span> <span class="kn">import</span> <span class="n">Other_Settings</span>
+
+
+<div class="viewcode-block" id="DeGroot_Model">
+<a class="viewcode-back" href="../../source/reference/packagereference.html#pyseldonlib.DeGrootModel.DeGroot_Model">[docs]</a>
+<span class="k">class</span> <span class="nc">DeGroot_Model</span><span class="p">(</span><span class="n">Base_Model</span><span class="p">):</span>
+<span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">    DeGroot Model base class for Simulation.</span>
+
+<span class="sd">    Parameters</span>
+<span class="sd">    -----------</span>
+<span class="sd">    max_iterations : int, default=None</span>
+<span class="sd">      The maximum number of iterations to run the simulation. If None, the simulation runs infinitely.</span>
+
+<span class="sd">    convergence_tol : float, default=1e-6</span>
+<span class="sd">      The tolerance for convergence of the simulation.</span>
+
+<span class="sd">    rng_seed : int, default=None</span>
+<span class="sd">      The seed for the random number generator. If not provided, a random seed is picked.</span>
+
+<span class="sd">    agent_file : str, default=None</span>
+<span class="sd">      The file to read the agents from. If None, the agents are generated randomly.</span>
+
+<span class="sd">    network_file : str, default=None</span>
+<span class="sd">      The file to read the network from. If None, the network is generated randomly</span>
+
+<span class="sd">    other_settings : Other_Settings, default=None</span>
+<span class="sd">      The other settings for the simulation. If None, the default settings are used.</span>
+
+<span class="sd">    Attributes</span>
+<span class="sd">    -----------</span>
+<span class="sd">    Network : Network (Object)</span>
+<span class="sd">      The network generated by the simulation.</span>
+
+<span class="sd">    Opinion : Float</span>
+<span class="sd">      The opinions of the agents or nodes of the network.</span>
+
+<span class="sd">    see also: seldoncore.Network</span>
+<span class="sd">    &quot;&quot;&quot;</span>
+
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span>
+        <span class="bp">self</span><span class="p">,</span>
+        <span class="n">max_iterations</span><span class="p">:</span> <span class="nb">int</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">convergence_tol</span><span class="p">:</span> <span class="nb">float</span> <span class="o">=</span> <span class="mf">1e-6</span><span class="p">,</span>
+        <span class="n">rng_seed</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">int</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">agent_file</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">network_file</span><span class="p">:</span> <span class="n">Optional</span><span class="p">[</span><span class="nb">str</span><span class="p">]</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+        <span class="n">other_settings</span><span class="p">:</span> <span class="n">Other_Settings</span> <span class="o">=</span> <span class="kc">None</span><span class="p">,</span>
+    <span class="p">):</span>
+        <span class="nb">super</span><span class="p">()</span><span class="o">.</span><span class="fm">__init__</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">other_settings</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">other_settings</span> <span class="o">=</span> <span class="n">other_settings</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">model_string</span> <span class="o">=</span> <span class="s2">&quot;DeGroot&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">model_settings</span> <span class="o">=</span> <span class="n">seldoncore</span><span class="o">.</span><span class="n">DeGrootSettings</span><span class="p">()</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">output_settings</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">other_settings</span><span class="o">.</span><span class="n">output_settings</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">network_settings</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">other_settings</span><span class="o">.</span><span class="n">network_settings</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">model</span> <span class="o">=</span> <span class="n">seldoncore</span><span class="o">.</span><span class="n">Model</span><span class="o">.</span><span class="n">DeGroot</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">model_settings</span><span class="o">.</span><span class="n">max_iterations</span> <span class="o">=</span> <span class="n">max_iterations</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">model_settings</span><span class="o">.</span><span class="n">convergence_tol</span> <span class="o">=</span> <span class="n">convergence_tol</span>
+
+        <span class="k">if</span> <span class="n">rng_seed</span> <span class="ow">is</span> <span class="ow">not</span> <span class="kc">None</span><span class="p">:</span>
+            <span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="o">.</span><span class="n">rng_seed</span> <span class="o">=</span> <span class="n">rng_seed</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_simulation</span> <span class="o">=</span> <span class="n">seldoncore</span><span class="o">.</span><span class="n">SimulationSimpleAgent</span><span class="p">(</span>
+            <span class="n">options</span><span class="o">=</span><span class="bp">self</span><span class="o">.</span><span class="n">_options</span><span class="p">,</span>
+            <span class="n">cli_agent_file</span><span class="o">=</span><span class="n">agent_file</span><span class="p">,</span>
+            <span class="n">cli_network_file</span><span class="o">=</span><span class="n">network_file</span><span class="p">,</span>
+        <span class="p">)</span>
+
+        <span class="bp">self</span><span class="o">.</span><span class="n">_network</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">_simulation</span><span class="o">.</span><span class="n">network</span></div>
+
+</pre></div>
 
                 </article>
               
@@ -499,44 +578,12 @@ Some of the models that are implemented in the package are:</p>
                 <footer class="prev-next-footer d-print-none">
                   
 <div class="prev-next-area">
-    <a class="left-prev"
-       href="index.html"
-       title="previous page">
-      <i class="fa-solid fa-angle-left"></i>
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">previous</p>
-        <p class="prev-next-title">Reference</p>
-      </div>
-    </a>
-    <a class="right-next"
-       href="models.html"
-       title="next page">
-      <div class="prev-next-info">
-        <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Models</p>
-      </div>
-      <i class="fa-solid fa-angle-right"></i>
-    </a>
 </div>
                 </footer>
               
             </div>
             
             
-              
-                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
-
-
-  <div class="sidebar-secondary-item">
-
-  <div class="tocsection sourcelink">
-    <a href="../../_sources/source/reference/introduction.rst.txt">
-      <i class="fa-solid fa-file-lines"></i> Show Source
-    </a>
-  </div>
-</div>
-
-</div></div>
               
             
           </div>

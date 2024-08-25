@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Example Usage of the Network Class from the pyseldon Package &#8212; PySeldon</title>
+    <title>Example Usage of the Network Class from the pyseldonlib Package &#8212; PySeldon</title>
   
   
   
@@ -239,7 +239,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Home Page</span></a>
         </li>
         <li class="nav-item">
@@ -251,7 +251,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -379,7 +379,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Home Page</span></a>
         </li>
         <li class="nav-item">
@@ -391,7 +391,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -407,7 +407,7 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1"><a class="reference internal" href="degrootmodel.html">DeGroot Model (Reaching Consensus)</a></li>
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example Usage of the Network Class from the pyseldon Package</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Example Usage of the Network Class from the pyseldonlib Package</a></li>
 </ul>
 </div>
 </nav></div>
@@ -465,12 +465,12 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section id="example-usage-of-the-network-class-from-the-pyseldon-package">
-<h1>Example Usage of the Network Class from the pyseldon Package<a class="headerlink" href="#example-usage-of-the-network-class-from-the-pyseldon-package" title="Link to this heading">#</a></h1>
+  <section id="example-usage-of-the-network-class-from-the-pyseldonlib-package">
+<h1>Example Usage of the Network Class from the pyseldonlib Package<a class="headerlink" href="#example-usage-of-the-network-class-from-the-pyseldonlib-package" title="Link to this heading">#</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import necessary modules</span>
-<span class="kn">import</span> <span class="nn">pyseldon</span>
+<span class="kn">import</span> <span class="nn">pyseldonlib</span>
 </pre></div>
 </div>
 </div>
@@ -478,7 +478,7 @@ document.write(`
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Initialize the Network object</span>
-<span class="n">network</span> <span class="o">=</span> <span class="n">pyseldon</span><span class="o">.</span><span class="n">Network</span><span class="p">(</span>
+<span class="n">network</span> <span class="o">=</span> <span class="n">pyseldonlib</span><span class="o">.</span><span class="n">Network</span><span class="p">(</span>
     <span class="n">model_string</span><span class="o">=</span><span class="s2">&quot;DeGroot&quot;</span><span class="p">,</span>
     <span class="n">neighbour_list</span><span class="o">=</span><span class="p">[[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">4</span><span class="p">],</span> <span class="p">[</span><span class="mi">3</span><span class="p">]],</span>
     <span class="n">weight_list</span><span class="o">=</span><span class="p">[[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="mf">0.5</span><span class="p">,</span> <span class="mf">0.5</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span> <span class="p">[</span><span class="mi">1</span><span class="p">]],</span>

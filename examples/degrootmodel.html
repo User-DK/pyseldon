@@ -47,7 +47,7 @@
     <link rel="icon" href="../_static/favicon.ico"/>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Example Usage of the Network Class from the pyseldon Package" href="network.html" />
+    <link rel="next" title="Example Usage of the Network Class from the pyseldonlib Package" href="network.html" />
     <link rel="prev" title="Examples" href="index.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
@@ -239,7 +239,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Home Page</span></a>
         </li>
         <li class="nav-item">
@@ -251,7 +251,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -379,7 +379,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="Home Page" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fas fa-home fa-lg" aria-hidden="true"></i>
             <span class="sr-only">Home Page</span></a>
         </li>
         <li class="nav-item">
@@ -391,7 +391,7 @@ document.write(`
           
           
           
-          <a href="https://github.com/seldon-code/pyseldon" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
+          <a href="https://github.com/seldon-code/pyseldonlib" title="GitHub" class="nav-link pst-navbar-icon" rel="noopener" target="_blank" data-bs-toggle="tooltip" data-bs-placement="bottom"><i class="fab fa-github-square fa-lg" aria-hidden="true"></i>
             <span class="sr-only">GitHub</span></a>
         </li>
 </ul></div>
@@ -407,7 +407,7 @@ document.write(`
   <p class="bd-links__title" role="heading" aria-level="1">Section Navigation</p>
   <div class="bd-toc-item navbar-nav"><ul class="current nav bd-sidenav">
 <li class="toctree-l1 current active"><a class="current reference internal" href="#">DeGroot Model (Reaching Consensus)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="network.html">Example Usage of the Network Class from the pyseldon Package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="network.html">Example Usage of the Network Class from the pyseldonlib Package</a></li>
 </ul>
 </div>
 </nav></div>
@@ -470,7 +470,7 @@ document.write(`
 <p>Import the packages</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyseldon</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyseldonlib</span>
 <span class="kn">import</span> <span class="nn">pathlib</span>
 <span class="kn">import</span> <span class="nn">shutil</span>
 </pre></div>
@@ -480,7 +480,7 @@ document.write(`
 <p>Initialize some other settings for the simulation</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">other_settings</span> <span class="o">=</span> <span class="n">pyseldon</span><span class="o">.</span><span class="n">Other_Settings</span><span class="p">(</span><span class="n">n_output_agents</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">other_settings</span> <span class="o">=</span> <span class="n">pyseldonlib</span><span class="o">.</span><span class="n">Other_Settings</span><span class="p">(</span><span class="n">n_output_agents</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span>
                                          <span class="n">n_output_network</span><span class="o">=</span> <span class="kc">None</span><span class="p">,</span> 
                                          <span class="n">print_progress</span><span class="o">=</span> <span class="kc">True</span><span class="p">,</span> 
                                          <span class="n">output_initial</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> 
@@ -494,7 +494,7 @@ document.write(`
 <p>Initialize the model with parameters.</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">pyseldon</span><span class="o">.</span><span class="n">DeGroot_Model</span><span class="p">(</span><span class="n">max_iterations</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">model</span> <span class="o">=</span> <span class="n">pyseldonlib</span><span class="o">.</span><span class="n">DeGroot_Model</span><span class="p">(</span><span class="n">max_iterations</span><span class="o">=</span><span class="mi">1000</span><span class="p">,</span>
                                <span class="n">convergence_tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">,</span>
                                <span class="n">rng_seed</span><span class="o">=</span><span class="mi">120</span><span class="p">,</span> 
                                <span class="n">other_settings</span><span class="o">=</span><span class="n">other_settings</span><span class="p">)</span>
@@ -508,7 +508,7 @@ document.write(`
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pyseldon._basemodel:Output directory path set to: /home/runner/work/pyseldon/pyseldon/docs/examples/output
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>INFO:pyseldonlib._basemodel:Output directory path set to: /home/runner/work/pyseldon/pyseldon/docs/examples/output
 </pre></div>
 </div>
 </div>
@@ -539,7 +539,7 @@ document.write(`
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Example Usage of the Network Class from the pyseldon Package</p>
+        <p class="prev-next-title">Example Usage of the Network Class from the pyseldonlib Package</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
