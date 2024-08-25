@@ -461,14 +461,20 @@ document.write(`
 <h2>Usage<a class="headerlink" href="#usage" title="Link to this heading">#</a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pyseldon</span>
 
-<span class="n">pyseldon</span><span class="o">.</span><span class="n">run_simulation_from_config_file</span><span class="p">(</span><span class="n">config_file_path</span> <span class="o">=</span><span class="s2">&quot;path/to/config.toml&quot;</span><span class="p">,</span> <span class="n">agent_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/agent.csv&quot;</span><span class="p">,</span> <span class="n">network_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/network.csv&quot;</span><span class="p">,</span> <span class="n">output_dir_path</span><span class="o">=</span><span class="s2">&quot;path/to/output&quot;</span><span class="p">)</span>
+<span class="n">pyseldon</span><span class="o">.</span><span class="n">run_simulation_from_config_file</span><span class="p">(</span>
+    <span class="n">config_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/config.toml&quot;</span><span class="p">,</span>
+    <span class="n">agent_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/agent.csv&quot;</span><span class="p">,</span>
+    <span class="n">network_file_path</span><span class="o">=</span><span class="s2">&quot;path/to/network.csv&quot;</span><span class="p">,</span>
+    <span class="n">output_dir_path</span><span class="o">=</span><span class="s2">&quot;path/to/output&quot;</span>
+<span class="p">)</span>
 </pre></div>
 </div>
+<p>This will run the simulation as per the configuration file and save the output files in the specified directory.</p>
 </section>
-<section id="toml-file-format">
-<h2>TOML file Format<a class="headerlink" href="#toml-file-format" title="Link to this heading">#</a></h2>
+<section id="configuration-toml-file-format">
+<h2>Configuration TOML file Format<a class="headerlink" href="#configuration-toml-file-format" title="Link to this heading">#</a></h2>
 <div class="highlight-toml notranslate"><div class="highlight"><pre><span></span><span class="k">[simulation]</span>
-<span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;&quot;</span>
+<span class="n">model</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;DeGroot&quot;</span>
 <span class="n">rng_seed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">120</span>
 
 <span class="k">[io]</span>
@@ -490,22 +496,28 @@ document.write(`
 <span class="n">connections_per_agent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">10</span>
 </pre></div>
 </div>
-<p># The model to run. Options are DeGroot, Deffuant, DeffuantVector, ActivityDriven, Inertial
-# The model specific parameters are given in the model section
-# The network parameters are given in the network section
-# The output parameters are given in the io section
-# Leaving this empty will pick a random seed
-# Write the network every 20 iterations
-# Write the opinions of agents after every iteration
-# Print the iteration time ; if not set, then does not prints
-# Print the initial opinions and network file from step 0. If not set, this is true by default.
-# Start writing out opinions and/or network files from this iteration. If not set, this is 1 + start_numbering_from.
-# The initial step number, before the simulation runs, is this value. The first step would be (1+start_numbering_from). By default, 0</p>
-<blockquote>
-<div><p># Model specific parameters</p>
-</div></blockquote>
-<p># If not set, max iterations is infinite
-# If not set, the default 1e-6 is used</p>
+</section>
+<section id="specifications">
+<h2>Specifications<a class="headerlink" href="#specifications" title="Link to this heading">#</a></h2>
+<ul class="simple">
+<li><p><strong>[simulation]</strong>
+- <cite>model</cite>: The model to run. Options are DeGroot, Deffuant, ActivityDriven, ActivityDrivenInertial.
+- <cite>rng_seed</cite>: Seed for random number generation. If left empty, a random seed is used.</p></li>
+<li><p><strong>[io]</strong>
+- <cite>n_output_network</cite>: Number of iterations between writing network files.
+- <cite>n_output_agents</cite>: Number of iterations between writing agent opinion files.
+- <cite>print_progress</cite>: Whether to print the iteration time. Default is false.
+- <cite>output_initial</cite>: Whether to print the initial opinions and network file from step 0. Default is true.
+- <cite>start_output</cite>: Iteration number from which to start writing outputs.
+- <cite>start_numbering_from</cite>: Initial step number before the simulation starts. Default is 0.</p></li>
+<li><p><strong>[model]</strong>
+- <cite>max_iterations</cite>: Maximum number of iterations. If not set, the maximum is infinite.</p></li>
+<li><p><strong>[DeGroot]</strong>
+- <cite>convergence</cite>: Convergence threshold for the DeGroot model.</p></li>
+<li><p><strong>[network]</strong>
+- <cite>number_of_agents</cite>: Number of agents in the network.
+- <cite>connections_per_agent</cite>: Number of connections each agent has.</p></li>
+</ul>
 </section>
 </section>
 
@@ -557,7 +569,8 @@ document.write(`
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#installation">Installation</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#usage">Usage</a></li>
-<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#toml-file-format">TOML file Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#configuration-toml-file-format">Configuration TOML file Format</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#specifications">Specifications</a></li>
 </ul>
   </nav></div>
 
