@@ -2,7 +2,7 @@
 # Contributing
 
 We love pull requests from everyone. By participating in this project, you
-agree to abide by the contributor covenant suggested [code of conduct].
+agree to abide by the contributor covenant suggested [code of conduct],.
 
 [code of conduct]: https://github.com/Seldon-code/seldon/blob/main/CODE_OF_CONDUCT.md
 
