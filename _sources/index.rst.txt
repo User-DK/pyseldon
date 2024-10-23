@@ -1,6 +1,6 @@
-.. image:: ../res/PySeldon_1.svg
+.. image:: https://raw.githubusercontent.com/User-DK/pyseldon/main/res/logotext.png
    :align: left
-   :width: 800px
+   :width: 700px
    :alt: PySeldonlib
 
 PySeldonlib Documentation
